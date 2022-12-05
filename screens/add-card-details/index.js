@@ -72,13 +72,13 @@ const AddCardDetailsScreen = params => {
             <TextInput style={styles.input} onChangeText={text => setCvv(text)} value={cvv} placeholder="Enter your CVV" placeholderTextColor="#9B9B9B" autoCapitalize="none" autoCorrect={false} />
           </View>
         </View>
-        <View style={styles.btnContainer}>
+        <Pressable onPress={{}}><View style={styles.btnContainer}>
           <Pressable style={styles.btn}>
             <Text style={styles.btnText}>Update</Text>
           </Pressable>
-        </View>
+        </View></Pressable>
       </ScrollView>
-    </SafeAreaView>;
+    <TextInput style={styles.iNLVkYnG}></TextInput></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -91,9 +91,9 @@ const styles = StyleSheet.create({
   },
   paletteContainer: {
     flexDirection: "row",
-    backgroundColor: "#F1F1F1",
+    backgroundColor: "#F1F1D2",
     height: 60,
-    width: 250,
+    width: 270,
     borderRadius: 10,
     alignItems: "center",
     justifyContent: "space-around",
@@ -162,6 +162,13 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold"
+  },
+  iNLVkYnG: {
+    position: "absolute",
+    backgroundColor: "#ffffff",
+    borderColor: "#cccccc",
+    width: 150,
+    height: 30
   }
 });
 export default AddCardDetailsScreen;
